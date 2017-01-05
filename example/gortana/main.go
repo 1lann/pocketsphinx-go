@@ -7,7 +7,7 @@ import (
 
 	"github.com/jawher/mow.cli"
 	"github.com/xlab/closer"
-	"github.com/xlab/pocketsphinx-go/sphinx"
+	"github.com/1lann/pocketsphinx-go/sphinx"
 	"github.com/xlab/portaudio-go/portaudio"
 )
 

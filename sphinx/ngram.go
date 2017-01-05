@@ -3,7 +3,7 @@ package sphinx
 import (
 	"fmt"
 
-	"github.com/xlab/pocketsphinx-go/pocketsphinx"
+	"github.com/1lann/pocketsphinx-go/pocketsphinx"
 )
 
 // NGramModel is a type representing an N-Gram based language model.

@@ -4,7 +4,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/xlab/pocketsphinx-go/pocketsphinx"
+	"github.com/1lann/pocketsphinx-go/pocketsphinx"
 )
 
 type Decoder struct {
@@ -263,6 +263,11 @@ func (d *Decoder) Probability() int32 {
 // Lattice.Retain() to retain it.
 func (d *Decoder) WordLattice() *Lattice {
 	lat := pocketsphinx.GetLattice(d.dec)
+
+	if lat == nil {
+		return nil
+	}
+
 	return &Lattice{
 		lat: lat,
 	}
